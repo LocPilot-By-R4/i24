@@ -18,73 +18,181 @@
   <meta property="og:description"
     content="Apartamento de 60 m² para hasta 8 viajeros en la residencia La Mongie Tourmalet, a pie de pistas del Grand Tourmalet – Pic du Midi.">
   <meta property="og:url" content="https://arcimmolamongie.fr/es/">
-  <meta property="og:image" content="../assets/img/exterieur/residence-hiver-hero.jpg">
+  <meta property="og:image" content="https://arcimmolamongie.fr/assets/img/exterieur/residence-hiver-hero.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.css">
+  <meta name="twitter:title" content="Arc Immo | Apartamento para 8 personas a pie de pistas en La Mongie">
+  <meta name="twitter:description"
+    content="Apartamento de 60 m² para hasta 8 viajeros en la residencia La Mongie Tourmalet, a pie de pistas del Grand Tourmalet – Pic du Midi.">
+  <meta name="twitter:image" content="https://arcimmolamongie.fr/assets/img/exterieur/residence-hiver-hero.webp">
+  <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/img/favicon.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" sizes="180x180">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image" href="../assets/img/interieur/salle-a-manger-768.webp" type="image/webp"
+    media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/interieur/salle-a-manger-1200.webp" type="image/webp"
+    media="(min-width: 768px) and (max-width: 1199px)" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/interieur/salle-a-manger.webp" type="image/webp"
+    media="(min-width: 1200px)" fetchpriority="high">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('arc-immo-cookie-choice')) {
+          document.documentElement.classList.add('has-cookie-choice');
+        }
+      } catch (error) { }
+    })();
+  </script>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"VacationRental",
-        "@id":"https://arcimmolamongie.fr/es/#vacationrental",
-        "name":"Arc Immo",
-        "url":"https://arcimmolamongie.fr/es/",
-        "description":"Arc Immo es un apartamento de 60 m² para hasta 8 personas situado en la residencia La Mongie Tourmalet, 3 rue de Sencours, 65200 Bagnères-de-Bigorre, a pie de pistas del Grand Tourmalet – Pic du Midi.",
-        "image":[
-          "https://arcimmolamongie.fr/assets/img/exterieur/residence-hiver-hero.jpg",
-          "https://arcimmolamongie.fr/assets/img/interieur/salle-a-manger.png",
-          "https://arcimmolamongie.fr/assets/img/interieur/cuisine.png",
-          "https://arcimmolamongie.fr/assets/img/interieur/salle-de-bain.png"
+        "@type": "VacationRental",
+        "@id": "https://arcimmolamongie.fr/es/#vacation-rental",
+        "identifier": "arc-immo-la-mongie-i24",
+        "name": "Arc Immo La Mongie",
+        "url": "https://arcimmolamongie.fr/es/",
+        "description": "Apartamento vacacional de 60 m² en La Mongie, situado en la residencia La Mongie Tourmalet, a pie de pistas del Grand Tourmalet – Pic du Midi. El alojamiento puede acoger hasta 8 personas y es una base práctica para disfrutar de la montaña en invierno y durante el resto del año.",
+        "inLanguage": "es-ES",
+        "additionalType": "Apartment",
+        "image": [
+          "https://arcimmolamongie.fr/assets/img/exterieur/residence-hiver-hero.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/salle-a-manger.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/cuisine.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/salon.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/salle-de-bain.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/chambre-superposes.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/chambre-verriere.webp",
+          "https://arcimmolamongie.fr/assets/img/interieur/coin-nuit.webp"
         ],
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"Résidence La Mongie Tourmalet, 3 rue de Sencours",
-          "postalCode":"65200",
-          "addressLocality":"Bagnères-de-Bigorre",
-          "addressRegion":"Occitanie",
-          "addressCountry":"FR"
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Résidence La Mongie Tourmalet, 3 rue de Sencours",
+          "addressLocality": "Bagnères-de-Bigorre",
+          "postalCode": "65200",
+          "addressRegion": "Occitanie",
+          "addressCountry": "FR"
         },
-        "floorSize":{
-          "@type":"QuantitativeValue",
-          "value":60,
-          "unitCode":"MTK"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.90922,
+          "longitude": 0.16683
         },
-        "occupancy":{
-          "@type":"QuantitativeValue",
-          "value":8
-        },
-        "checkinTime":"15:00",
-        "checkoutTime":"10:00",
-        "petsAllowed":false,
-        "amenityFeature":[
-          {"@type":"LocationFeatureSpecification","name":"Elevator","value":true},
-          {"@type":"LocationFeatureSpecification","name":"SkiStorage","value":true},
-          {"@type":"LocationFeatureSpecification","name":"Dishwasher","value":true},
-          {"@type":"LocationFeatureSpecification","name":"Oven","value":true},
-          {"@type":"LocationFeatureSpecification","name":"Microwave","value":true},
-          {"@type":"LocationFeatureSpecification","name":"CoffeeMaker","value":true},
-          {"@type":"LocationFeatureSpecification","name":"Television","value":true},
-          {"@type":"LocationFeatureSpecification","name":"WirelessInternet","value":false},
-          {"@type":"LocationFeatureSpecification","name":"Washer","value":false},
-          {"@type":"LocationFeatureSpecification","name":"Balcony","value":false}
-        ]
+        "latitude": 42.90922,
+        "longitude": 0.16683,
+        "checkinTime": "15:00",
+        "checkoutTime": "10:00",
+        "petsAllowed": false,
+        "containsPlace": {
+          "@type": "Accommodation",
+          "@id": "https://arcimmolamongie.fr/es/#accommodation",
+          "name": "Apartamento Arc Immo La Mongie",
+          "description": "Apartamento completo de 60 m² situado en La Mongie, con amplia zona de estar, cocina equipada, capacidad hasta 8 personas, baño con bañera y ducha, ascensor y guardaesquís privado.",
+          "additionalType": "EntirePlace",
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": 60,
+            "unitCode": "MTK"
+          },
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "value": 8,
+            "unitCode": "C62"
+          },
+          "numberOfBathroomsTotal": 1,
+          "numberOfBedrooms": 1,
+          "amenityFeature": [
+  { "@type": "LocationFeatureSpecification", "name": "elevator", "value": true },
+  { "@type": "LocationFeatureSpecification", "name": "kitchen", "value": true },
+  { "@type": "LocationFeatureSpecification", "name": "microwave", "value": true },
+  { "@type": "LocationFeatureSpecification", "name": "ovenStove", "value": true },
+  { "@type": "LocationFeatureSpecification", "name": "tv", "value": true },
+  { "@type": "LocationFeatureSpecification", "name": "heating", "value": true },
+  { "@type": "LocationFeatureSpecification", "name": "wifi", "value": false },
+  { "@type": "LocationFeatureSpecification", "name": "washerDryer", "value": false },
+  { "@type": "LocationFeatureSpecification", "name": "balcony", "value": false },
+  { "@type": "LocationFeatureSpecification", "name": "petsAllowed", "value": false },
+  { "@type": "LocationFeatureSpecification", "name": "parkingType", "value": "Free" },
+  { "@type": "LocationFeatureSpecification", "name": "internetType", "value": "None" }
+],
+"bed": [
+  {
+    "@type": "BedDetails",
+    "numberOfBeds": 1,
+    "typeOfBed": "Queen"
+  },
+  {
+    "@type": "BedDetails",
+    "numberOfBeds": 2,
+    "typeOfBed": "Double"
+  },
+  {
+    "@type": "BedDetails",
+    "numberOfBeds": 1,
+    "typeOfBed": "SofaBed"
+  }
+]
+        }
       },
       {
-        "@type":"Organization",
-        "@id":"https://arcimmolamongie.fr/es/#organization",
-        "name":"LocPilot",
-        "url":"https://arcimmolamongie.fr/"
+        "@type": "WebSite",
+        "@id": "https://arcimmolamongie.fr/es/#website",
+        "url": "https://arcimmolamongie.fr/es/",
+        "name": "Arc Immo La Mongie",
+        "inLanguage": "es-ES",
+        "publisher": {
+          "@id": "https://arcimmolamongie.fr/es/#organization"
+        }
       },
       {
-        "@type":"WebSite",
-        "@id":"https://arcimmolamongie.fr/es/#website",
-        "url":"https://arcimmolamongie.fr/",
-        "name":"Arc Immo"
+        "@type": "WebPage",
+        "@id": "https://arcimmolamongie.fr/es/#webpage",
+        "url": "https://arcimmolamongie.fr/es/",
+        "name": "Arc Immo La Mongie | Apartamento para 8 personas a pie de pistas",
+        "description": "Apartamento vacacional en La Mongie, 60 m² hasta 8 personas, situado en la residencia La Mongie Tourmalet a pie de pistas del Grand Tourmalet – Pic du Midi.",
+        "inLanguage": "es-ES",
+        "isPartOf": {
+          "@id": "https://arcimmolamongie.fr/es/#website"
+        },
+        "mainEntity": {
+          "@id": "https://arcimmolamongie.fr/es/#vacation-rental"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://arcimmolamongie.fr/es/#organization",
+        "name": "LocPilot by R4",
+        "url": "https://locpilotbyr4.fr/"
       }
     ]
   }
+  </script>
+  <!-- Google tag (gtag.js) - GA4 avec Consent Mode -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    const arcAnalyticsChoice = (() => {
+      try {
+        return localStorage.getItem('arc-immo-cookie-choice');
+      } catch (error) {
+        return null;
+      }
+    })();
+
+    gtag('consent', 'default', {
+      'analytics_storage': arcAnalyticsChoice === 'accepted' ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P88E0RJMH"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-4P88E0RJMH');
   </script>
 </head>
 
@@ -98,28 +206,33 @@
         <span class="brand-v2-sub">Apartamento en La Mongie</span>
       </a>
 
-      <button class="nav-toggle-v2" type="button" aria-expanded="false" aria-controls="main-nav">
+      <button class="nav-toggle-v2" type="button" aria-expanded="false" aria-controls="header-menu">
         ☰
         <span class="sr-only">Abrir el menú</span>
       </button>
 
-      <nav class="main-nav-v2" id="main-nav" aria-label="Navegación principal">
-        <a href="#logement">El apartamento</a>
-        <a href="#equipements">Equipamiento</a>
-        <a href="#couchages">Descanso</a>
-        <a href="#visite-360">Visita 360</a>
-        <a href="#la-mongie-alentours">La Mongie y alrededores</a>
-        <a href="#faq">FAQ</a>
-        <a href="#infos-pratiques">Información práctica</a>
-      </nav>
-
-      <div class="header-actions-v2">
-        <nav class="lang-switcher" aria-label="Selector de idioma">
-          <a href="../index.html" lang="fr" hreflang="fr">FR</a>
-          <a href="../en/index.html" lang="en" hreflang="en">EN</a>
-          <a class="is-active" href="index.html" lang="es" hreflang="es">ES</a>
+      <div class="header-menu-v2" id="header-menu">
+        <nav class="main-nav-v2" id="main-nav" aria-label="Navegación principal">
+          <a href="#logement">El apartamento</a>
+          <a href="#equipements">Equipamiento</a>
+          <a href="#couchages">Descanso</a>
+          <a href="#visite-360">Visita 360</a>
+          <a href="#la-mongie-alentours">La Mongie y alrededores</a>
+          <a href="#faq">FAQ</a>
+          <a href="#infos-pratiques">Información práctica</a>
         </nav>
-        <a class="btn btn-solid" href="#reservation">Reservar</a>
+
+        <div class="header-actions-v2">
+          <nav class="lang-switcher" aria-label="Selector de idioma">
+            <a href="../index.html" lang="fr" hreflang="fr"><img class="lang-flag" src="../assets/img/flags/fr.svg"
+                alt="" aria-hidden="true"><span class="lang-code">FR</span></a>
+            <a href="../en/index.html" lang="en" hreflang="en"><img class="lang-flag" src="../assets/img/flags/gb.svg"
+                alt="" aria-hidden="true"><span class="lang-code">EN</span></a>
+            <a class="is-active" href="index.html" lang="es" hreflang="es"><img class="lang-flag"
+                src="../assets/img/flags/es.svg" alt="" aria-hidden="true"><span class="lang-code">ES</span></a>
+          </nav>
+          <a class="btn btn-solid" href="#reservation">Reservar</a>
+        </div>
       </div>
     </div>
   </header>
@@ -127,8 +240,13 @@
   <main id="main">
     <section class="hero-v2">
       <div class="hero-v2-media">
-        <img src="../assets/img/interieur/salle-a-manger.png" alt="Zona de estar del apartamento Arc Immo en La Mongie"
-          width="1800" height="1100">
+        <picture>
+          <source media="(max-width: 767px)" srcset="../assets/img/interieur/salle-a-manger-768.webp">
+          <source media="(max-width: 1199px)" srcset="../assets/img/interieur/salle-a-manger-1200.webp">
+          <img src="../assets/img/interieur/salle-a-manger.webp"
+            alt="Zona de estar del apartamento Arc Immo en La Mongie" width="1800" height="1100" fetchpriority="high"
+            loading="eager" decoding="async">
+        </picture>
       </div>
       <div class="hero-v2-overlay"></div>
 
@@ -138,7 +256,11 @@
           <h1>Tu refugio en la montaña</h1>
           <p class="hero-v2-text">
             Arc Immo le recibe en un apartamento de 60 m² para hasta 8 viajeros,
-            en el corazón del Grand Tourmalet – Pic du Midi, en una de las únicas 2 residencias realmente situadas a pie de pistas.
+            en el corazón del Grand Tourmalet – Pic du Midi, en una de las únicas 2 residencias realmente situadas a pie
+            de pistas.
+          </p>
+          <p class="hero-v2-address">
+            Résidence La Mongie Tourmalet, 3 rue de Sencours, 65200 Bagnères-de-Bigorre, Francia.
           </p>
           <div class="hero-v2-actions">
             <a class="btn btn-accent" href="#visite-360">Descubrir en 360°</a>
@@ -161,7 +283,7 @@
               <span>Résidence La Mongie Tourmalet</span>
             </li>
             <li>
-              <strong>Ascenseur</strong>
+              <strong>Ascensor</strong>
               <span>Acceso facilitado a la planta</span>
             </li>
             <li>
@@ -190,28 +312,28 @@
       <div class="viewer-scroller">
         <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="salle-a-manger"
           aria-label="Abrir la visita 360 del comedor">
-          <img src="../assets/img/360/sallemanger.png" alt="Vista previa 360 del comedor de Arc Immo"
+          <img src="../assets/img/360/thumbs/sallemanger-640.webp" alt="Vista previa 360 del comedor de Arc Immo"
             loading="lazy" width="640" height="360">
           <span>Comedor</span>
         </button>
 
         <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="salon"
           aria-label="Abrir la visita 360 del salón">
-          <img src="../assets/img/360/salon.png" alt="Vista previa 360 del salón de Arc Immo" loading="lazy" width="640"
-            height="360">
+          <img src="../assets/img/360/thumbs/salon-640.webp" alt="Vista previa 360 del salón de Arc Immo" loading="lazy"
+            width="640" height="360">
           <span>Salón</span>
         </button>
 
-        <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="cuisine"
+        <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="cocina"
           aria-label="Abrir la visita 360 de la cocina">
-          <img src="../assets/img/360/cuisine.png" alt="Vista previa 360 de la cocina equipada de Arc Immo"
+          <img src="../assets/img/360/thumbs/cuisine-640.webp" alt="Vista previa 360 de la cocina equipada de Arc Immo"
             loading="lazy" width="640" height="360">
-          <span>Cuisine</span>
+          <span>Cocina</span>
         </button>
 
         <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="chambre"
           aria-label="Abrir la visita 360 del dormitorio">
-          <img src="../assets/img/360/chambre.png"
+          <img src="../assets/img/360/thumbs/chambre-640.webp"
             alt="Vista previa 360 del dormitorio con camas dobles superpuestas de Arc Immo" loading="lazy" width="640"
             height="360">
           <span>Dormitorio</span>
@@ -219,7 +341,7 @@
 
         <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="coin-nuit"
           aria-label="Abrir la visita 360 del rincón de noche">
-          <img src="../assets/img/360/chambre-verriere.png"
+          <img src="../assets/img/360/thumbs/chambre-verriere-640.webp"
             alt="Vista previa 360 del rincón de noche detrás de la cristalera de Arc Immo" loading="lazy" width="640"
             height="360">
           <span>Rincón de noche</span>
@@ -227,16 +349,15 @@
 
         <button class="viewer-thumb viewer-thumb-btn" type="button" data-scene="salle-de-bain"
           aria-label="Abrir la visita 360 del baño">
-          <img src="../assets/img/360/salledebaindouche.png"
-            alt="Vista previa 360 del baño con bañera y ducha de Arc Immo" loading="lazy"
-            width="640" height="360">
+          <img src="../assets/img/360/thumbs/salledebaindouche-640.webp"
+            alt="Vista previa 360 del baño con bañera y ducha de Arc Immo" loading="lazy" width="640" height="360">
           <span>Baño</span>
         </button>
       </div>
     </section>
 
     <section class="cards-row-v2 section-gap-top">
-      <article class="card-v2 card-logement">
+      <article class="card-v2 card-logement" id="logement">
         <div class="card-title-row">
           <span class="card-title-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -288,7 +409,7 @@
         <a class="chip-btn" href="#logement">Más información</a>
       </article>
 
-      <article class="card-v2 card-equipements">
+      <article class="card-v2 card-equipements" id="equipements">
         <div class="card-title-row">
           <span class="card-title-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -325,7 +446,7 @@
         </ul>
       </article>
 
-      <article class="card-v2 card-couchages">
+      <article class="card-v2 card-couchages" id="couchages">
         <div class="card-title-row">
           <span class="card-title-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -384,7 +505,8 @@
             Arc Immo le permite disfrutar plenamente de La Mongie en cualquier estación.
           </p>
           <p>
-            Desde la residencia, accede rápidamente a los grandes imprescindibles de la zona, manteniendo una verdadera comodidad al volver después del día.
+            Desde la residencia, accede rápidamente a los grandes imprescindibles de la zona, manteniendo una verdadera
+            comodidad al volver después del día.
           </p>
 
           <div class="region-highlights-v2">
@@ -400,14 +522,14 @@
       <div class="region-scroller-v2">
         <button class="region-card-v2 region-card-btn" type="button" data-region-index="0"
           data-region-access="Acceso rápido desde la residencia y subida en teleférico."
-          data-region-season="Todo el año · Panorama" data-region-image="assets/img/alentours/pic-du-midi.jpg"
+          data-region-season="Todo el año · Panorama" data-region-image="../assets/img/alentours/pic-du-midi.webp"
           data-region-title="Pic du Midi"
           data-region-text="El gran mirador panorámico de los Altos Pirineos, en verano y en invierno."
           data-region-notes="Panorama emblemático de la zona. Ideal para una salida memorable cuando el tiempo está despejado. En periodos de afluencia, conviene anticiparse."
           data-region-route="Desde La Mongie, se llega rápidamente al teleférico. Es la opción más sencilla para disfrutar del lugar sin una larga aproximación."
           data-region-map="https://www.google.com/maps/search/?api=1&amp;query=Pic+du+Midi+de+Bigorre">
-          <img src="../assets/img/alentours/pic-du-midi.jpg" alt="Pic du Midi de Bigorre" width="900" height="600"
-            loading="lazy">
+          <img src="../assets/img/alentours/thumbs/pic-du-midi-900.webp" alt="Pic du Midi de Bigorre" width="900"
+            height="600" loading="lazy">
           <span class="region-badge-v2">Panorama</span>
           <div class="region-copy-v2">
             <strong>Pic du Midi</strong>
@@ -417,13 +539,14 @@
 
         <button class="region-card-v2 region-card-btn" type="button" data-region-index="1"
           data-region-access="Desde la residencia, acceso muy rápido al sector de La Mongie."
-          data-region-season="Invierno · Esquí y outdoor" data-region-image="assets/img/alentours/grand-tourmalet.jpg"
-          data-region-title="Grand Tourmalet" data-region-text="El mayor dominio esquiable de los Pirineos franceses."
+          data-region-season="Invierno · Esquí y outdoor"
+          data-region-image="../assets/img/alentours/grand-tourmalet.webp" data-region-title="Grand Tourmalet"
+          data-region-text="El mayor dominio esquiable de los Pirineos franceses."
           data-region-notes="La zona ofrece un auténtico terreno de juego en invierno y también en temporada intermedia. Según las condiciones, conviene comprobar la apertura de remontes, sectores y el tiempo del día."
           data-region-route="Desde la residencia, el acceso a las pistas y al dominio se realiza muy rápidamente por el lado de La Mongie. Es la opción más directa para una jornada de esquí o montaña."
           data-region-map="https://www.google.com/maps/search/?api=1&amp;query=Grand+Tourmalet+La+Mongie">
-          <img src="../assets/img/alentours/grand-tourmalet.jpg" alt="Domaine du Grand Tourmalet" width="900" height="600"
-            loading="lazy">
+          <img src="../assets/img/alentours/thumbs/grand-tourmalet-900.webp" alt="Domaine du Grand Tourmalet"
+            width="900" height="600" loading="lazy">
           <span class="region-badge-v2">Esquí y outdoor</span>
           <div class="region-copy-v2">
             <strong>Grand Tourmalet</strong>
@@ -434,13 +557,13 @@
         <button class="region-card-v2 region-card-btn" type="button" data-region-index="2"
           data-region-access="Trayecto corto en coche cuando la carretera está abierta."
           data-region-season="Verano / entretiempo · Puerto mítico"
-          data-region-image="assets/img/alentours/col-du-tourmalet.jpg" data-region-title="Col du Tourmalet"
+          data-region-image="../assets/img/alentours/col-du-tourmalet.webp" data-region-title="Col du Tourmalet"
           data-region-text="Un lugar emblemático para los amantes de la montaña y de los grandes puertos."
           data-region-notes="Un lugar mítico de los Pirineos, magnífico para las vistas y las paradas fotográficas. Atención: la carretera puede estar cerrada según la temporada o las condiciones meteorológicas."
           data-region-route="Se accede en coche desde La Mongie cuando la carretera está abierta. El trayecto es corto y muy panorámico, con varias posibilidades de parada."
           data-region-map="https://www.google.com/maps/search/?api=1&amp;query=Col+du+Tourmalet">
-          <img src="../assets/img/alentours/col-du-tourmalet.jpg" alt="Col du Tourmalet" width="900" height="600"
-            loading="lazy">
+          <img src="../assets/img/alentours/thumbs/col-du-tourmalet-900.webp" alt="Col du Tourmalet" width="900"
+            height="600" loading="lazy">
           <span class="region-badge-v2">Mítico</span>
           <div class="region-copy-v2">
             <strong>Col du Tourmalet</strong>
@@ -450,13 +573,14 @@
 
         <button class="region-card-v2 region-card-btn" type="button" data-region-index="3"
           data-region-access="Acceso fácil desde la estación y después aproximación a pie según el punto de partida."
-          data-region-season="Verano / entretiempo · Paseo" data-region-image="assets/img/alentours/lac-oncet.jpg"
+          data-region-season="Verano / entretiempo · Paseo" data-region-image="../assets/img/alentours/lac-oncet.webp"
           data-region-title="Lac d’Oncet"
           data-region-text="Una salida accesible con auténtico ambiente de lago de montaña."
           data-region-notes="Una muy buena opción para una salida de naturaleza sin plantear una expedición. Aun así, conviene llevar buen calzado y una capa cortavientos, sobre todo si las condiciones cambian rápido."
           data-region-route="Desde La Mongie, el acceso al sector del puerto es fácil. Después, el tramo final se hace tranquilamente a pie según el punto de partida elegido."
           data-region-map="https://www.google.com/maps/search/?api=1&amp;query=Lac+d%27Oncet">
-          <img src="../assets/img/alentours/lac-oncet.jpg" alt="Lac d’Oncet" width="900" height="600" loading="lazy">
+          <img src="../assets/img/alentours/thumbs/lac-oncet-900.webp" alt="Lac d’Oncet" width="900" height="600"
+            loading="lazy">
           <span class="region-badge-v2">Paseo</span>
           <div class="region-copy-v2">
             <strong>Lac d’Oncet</strong>
@@ -465,14 +589,15 @@
         </button>
 
         <button class="region-card-v2 region-card-btn" type="button" data-region-index="4"
-          data-region-access="Salidas variadas según el itinerario elegido." data-region-season="Todo el año · Descubrimiento"
-          data-region-image="assets/img/alentours/balades.jpg" data-region-title="Paseos panorámicos"
+          data-region-access="Salidas variadas según el itinerario elegido."
+          data-region-season="Todo el año · Descubrimiento" data-region-image="../assets/img/alentours/balades.webp"
+          data-region-title="Paseos panorámicos"
           data-region-text="Vistas abiertas e itinerarios para disfrutar de la zona de otra manera."
           data-region-notes="Perfecto para descubrir La Mongie más allá del esquí. Según la temporada, se pueden elegir paseos sencillos, salidas fotográficas o itinerarios más contemplativos."
           data-region-route="Desde la residencia, varios puntos de salida son accesibles rápidamente en coche o a pie según el itinerario elegido. La idea es escoger la salida según el tiempo, la disponibilidad y el nivel del grupo."
           data-region-map="https://www.google.com/maps/search/?api=1&amp;query=La+Mongie+balades+panoramiques">
-          <img src="../assets/img/alentours/balades.jpg" alt="Paseos panorámicos à La Mongie" width="900" height="600"
-            loading="lazy">
+          <img src="../assets/img/alentours/thumbs/balades-900.webp" alt="Paseos panorámicos en La Mongie" width="900"
+            height="600" loading="lazy">
           <span class="region-badge-v2">Naturaleza</span>
           <div class="region-copy-v2">
             <strong>Paseos panorámicos</strong>
@@ -483,58 +608,61 @@
     </section>
 
 
-    <section class="shell stay-ideas-v2 section-gap" id="logement" aria-labelledby="stay-ideas-title">
+    <section class="shell stay-ideas-v2 section-gap" id="ideas-estancia" aria-labelledby="stay-ideas-title">
       <div class="stay-ideas-v2__intro">
         <p class="section-tag">Ideas de estancia</p>
         <h2 id="stay-ideas-title">Ideas para disfrutar de La Mongie según la duración de su estancia</h2>
         <p>
-          Week-end montagne, pause de quelques jours ou séjour plus long pour rayonner sur les Hautes-Pyrénées :
-          l’appartement permet d’adapter facilement le programme selon la saison, le rythme souhaité et les envies du
-          moment.
+          Ya sea para un fin de semana de montaña, unos días de descanso o una estancia más larga para descubrir los
+          Altos
+          Pirineos,
+          el apartamento permite adaptar fácilmente el programa según la temporada, el ritmo deseado y las ganas del
+          momento.
         </p>
       </div>
 
       <div class="stay-ideas-v2__grid">
-        <article class="white-card-v2 stay-idea-card-v2">
+        <article class="white-card-v2 stay-idea-card-v2" id="escapada-2-dias">
           <p class="section-tag">Escapada de 2 días</p>
           <h3>Disfrutar de la estación sin perder tiempo</h3>
           <p>
-            Idéal pour couper rapidement avec le quotidien et profiter de La Mongie sans détour.
-            En hiver, ce format permet de se concentrer sur les pistes, la station et les panoramas.
-            Aux beaux jours, il fonctionne très bien pour une parenthèse montagne entre balade,
-            col du Tourmalet et grand bol d’air en altitude.
+            Ideal para desconectar rápidamente del día a día y disfrutar de La Mongie sin perder tiempo.
+            En invierno, este formato permite centrarse en las pistas, la estación y los paisajes.
+            En los días más suaves, funciona muy bien para una escapada de montaña entre paseo,
+            Col du Tourmalet y aire puro en altura.
           </p>
-          <div class="info-badges-v2" aria-label="Format de séjour">
+          <div class="info-badges-v2" aria-label="Formato de estancia">
             <span>Formato corto</span>
             <span>La estación al alcance</span>
           </div>
         </article>
 
-        <article class="white-card-v2 stay-idea-card-v2" id="equipements">
+        <article class="white-card-v2 stay-idea-card-v2" id="estancia-4-dias">
           <p class="section-tag">Estancia de 4 días</p>
           <h3>El formato ideal para combinar estación y descubrimientos</h3>
           <p>
-            Avec quelques jours sur place, il devient plus facile d’alterner temps actif et moments plus calmes.
-            L’hiver, cela permet de profiter du domaine tout en découvrant le secteur.
-            Le reste de l’année, ce format se prête bien à un programme varié entre Pic du Midi,
-            panoramas, cols emblématiques, lac d’Oncet et temps de pause à La Mongie.
+            Con unos días en el destino, resulta más fácil alternar momentos activos y pausas más tranquilas.
+            En invierno, permite disfrutar del dominio esquiable mientras se descubre el entorno.
+            El resto del año, este formato se adapta muy bien a un programa variado entre Pic du Midi,
+            panorámicas, puertos míticos, lago de Oncet y tiempo de descanso en La Mongie.
           </p>
-          <div class="info-badges-v2" aria-label="Format de séjour">
+          <div class="info-badges-v2" aria-label="Formato de estancia">
             <span>El equilibrio ideal</span>
             <span>Estación + alrededores</span>
           </div>
         </article>
 
-        <article class="white-card-v2 stay-idea-card-v2" id="couchages">
+        <article class="white-card-v2 stay-idea-card-v2" id="semana-estancia">
           <p class="section-tag">Una semana para recorrer</p>
           <h3>Una base coherente para explorar los Pirineos</h3>
           <p>
-            Sur un séjour plus long, La Mongie devient une vraie base pour explorer plus largement
-            les Hautes-Pyrénées et la chaîne pyrénéenne. El apartamento permet alors d’alterner vie en station,
-            grands sites, vallées, routes de montagne, balades d’altitude et découvertes à la journée,
-            tout en gardant un point d’ancrage simple pour revenir chaque soir.
+            En una estancia más larga, La Mongie se convierte en una base coherente para explorar los Altos Pirineos y
+            la cadena
+            pirenaica.
+            El apartamento permite alternar vida en la estación, grandes lugares, valles, carreteras de montaña,
+            paseos en altura y excursiones de día, manteniendo un punto de regreso sencillo cada noche.
           </p>
-          <div class="info-badges-v2" aria-label="Format de séjour">
+          <div class="info-badges-v2" aria-label="Formato de estancia">
             <span>Base de 4 estaciones</span>
             <span>Pirineos al alcance</span>
           </div>
@@ -555,7 +683,8 @@
               </span>
               <h2>Galería inmersiva</h2>
             </div>
-            <p>Desplácese por los ambientes principales del apartamento y abra cada foto en pantalla completa con un clic.</p>
+            <p>Desplácese por los ambientes principales del apartamento y abra cada foto en pantalla completa con un
+              clic.</p>
           </div>
 
           <div class="gallery-head-v2__meta">
@@ -565,9 +694,12 @@
             </div>
 
             <div class="gallery-carousel-actions">
-              <button class="gallery-carousel-nav" type="button" data-gallery-scroll="prev" aria-label="Photos précédentes">←</button>
-              <button class="gallery-carousel-nav" type="button" data-gallery-scroll="next" aria-label="Photos suivantes">→</button>
-              <button class="chip-btn gallery-open-btn" type="button" data-gallery-open="0">Abrir en pantalla completa</button>
+              <button class="gallery-carousel-nav" type="button" data-gallery-scroll="prev"
+                aria-label="Photos précédentes">←</button>
+              <button class="gallery-carousel-nav" type="button" data-gallery-scroll="next"
+                aria-label="Photos suivantes">→</button>
+              <button class="chip-btn gallery-open-btn" type="button" data-gallery-open="0">Abrir en pantalla
+                completa</button>
             </div>
           </div>
         </div>
@@ -575,10 +707,10 @@
         <div class="gallery-carousel-wrap">
           <div class="gallery-grid-7" id="gallery-carousel-track">
             <button class="gallery-thumb is-active" type="button" data-gallery-index="0"
-              data-gallery-full="assets/img/interieur/salle-de-bain.png" data-gallery-alt="Baño de Arc Immo"
+              data-gallery-full="../assets/img/interieur/salle-de-bain.webp" data-gallery-alt="Baño de Arc Immo"
               data-gallery-title="Baño" data-gallery-subtitle="Ducha y bañera para la vuelta de la montaña">
-              <img src="../assets/img/interieur/salle-de-bain.png" alt="Baño de Arc Immo" width="600" height="400"
-                loading="lazy">
+              <img src="../assets/img/interieur/thumbs/salle-de-bain-600.webp" alt="Baño de Arc Immo" width="600"
+                height="400" loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">01 · Bienestar</span>
@@ -588,11 +720,11 @@
             </button>
 
             <button class="gallery-thumb" type="button" data-gallery-index="1"
-              data-gallery-full="assets/img/interieur/chambre-superposes.png"
+              data-gallery-full="../assets/img/interieur/chambre-superposes.webp"
               data-gallery-alt="Dormitorio con camas dobles superpuestas" data-gallery-title="Dormitorio familiar"
-              data-gallery-subtitle="Dos camas dobles superpuestas para estancias en grupo">
-              <img src="../assets/img/interieur/chambre-superposes.png" alt="Dormitorio con camas dobles superpuestas"
-                width="600" height="400" loading="lazy">
+              data-gallery-subtitle="Dos camas dobles superpuestas para estancias en group">
+              <img src="../assets/img/interieur/thumbs/chambre-superposes-600.webp"
+                alt="Dormitorio con camas dobles superpuestas" width="600" height="400" loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">02 · Descanso</span>
@@ -602,11 +734,12 @@
             </button>
 
             <button class="gallery-thumb" type="button" data-gallery-index="2"
-              data-gallery-full="assets/img/interieur/chambre-verriere.png"
-              data-gallery-alt="Rincón de noche detrás de la cristalera" data-gallery-title="Rincón de noche con cristalera"
+              data-gallery-full="../assets/img/interieur/chambre-verriere.webp"
+              data-gallery-alt="Rincón de noche detrás de la cristalera"
+              data-gallery-title="Rincón de noche con cristalera"
               data-gallery-subtitle="Un ambiente más íntimo en el corazón del apartamento">
-              <img src="../assets/img/interieur/chambre-verriere.png" alt="Rincón de noche detrás de la cristalera" width="600"
-                height="400" loading="lazy">
+              <img src="../assets/img/interieur/thumbs/chambre-verriere-600.webp"
+                alt="Rincón de noche detrás de la cristalera" width="600" height="400" loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">03 · Ambiente</span>
@@ -616,10 +749,11 @@
             </button>
 
             <button class="gallery-thumb" type="button" data-gallery-index="3"
-              data-gallery-full="assets/img/interieur/salle-a-manger.png" data-gallery-alt="Comedor de Arc Immo"
-              data-gallery-title="Espacio comedor" data-gallery-subtitle="Un espacio acogedor para compartir la estancia">
-              <img src="../assets/img/interieur/salle-a-manger.png" alt="Comedor de Arc Immo" width="600" height="400"
-                loading="lazy">
+              data-gallery-full="../assets/img/interieur/salle-a-manger.webp" data-gallery-alt="Comedor de Arc Immo"
+              data-gallery-title="Espacio comedor"
+              data-gallery-subtitle="Un espacio acogedor para compartir la estancia">
+              <img src="../assets/img/interieur/thumbs/salle-a-manger-600.webp" alt="Comedor de Arc Immo" width="600"
+                height="400" loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">04 · Convivencia</span>
@@ -629,10 +763,11 @@
             </button>
 
             <button class="gallery-thumb" type="button" data-gallery-index="4"
-              data-gallery-full="assets/img/interieur/cuisine.png" data-gallery-alt="Cocina equipada de Arc Immo"
-              data-gallery-title="Cocina equipada" data-gallery-subtitle="Pensada para cocinar fácilmente en el alojamiento">
-              <img src="../assets/img/interieur/cuisine.png" alt="Cocina equipada de Arc Immo" width="600" height="400"
-                loading="lazy">
+              data-gallery-full="../assets/img/interieur/cuisine.webp" data-gallery-alt="Cocina equipada de Arc Immo"
+              data-gallery-title="Cocina equipada"
+              data-gallery-subtitle="Pensada para cocinar fácilmente en el alojamiento">
+              <img src="../assets/img/interieur/thumbs/cuisine-600.webp" alt="Cocina equipada de Arc Immo" width="600"
+                height="400" loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">05 · Funcional</span>
@@ -642,9 +777,10 @@
             </button>
 
             <button class="gallery-thumb" type="button" data-gallery-index="5"
-              data-gallery-full="assets/img/interieur/salon.png" data-gallery-alt="Salón de Arc Immo"
+              data-gallery-full="../assets/img/interieur/salon.webp" data-gallery-alt="Salón de Arc Immo"
               data-gallery-title="Salón" data-gallery-subtitle="Un espacio central para reunirse al final del día">
-              <img src="../assets/img/interieur/salon.png" alt="Salón de Arc Immo" width="600" height="400" loading="lazy">
+              <img src="../assets/img/interieur/thumbs/salon-600.webp" alt="Salón de Arc Immo" width="600" height="400"
+                loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">06 · Vida de salón</span>
@@ -654,15 +790,15 @@
             </button>
 
             <button class="gallery-thumb" type="button" data-gallery-index="6"
-              data-gallery-full="assets/img/interieur/coin-nuit.png"
-              data-gallery-alt="Vista interior complementaria de Arc Immo" data-gallery-title="Perspective intérieure"
+              data-gallery-full="../assets/img/interieur/coin-nuit.webp"
+              data-gallery-alt="Vista interior complementaria de Arc Immo" data-gallery-title="Perspectiva interior"
               data-gallery-subtitle="Una lectura adicional de los volúmenes y del ambiente">
-              <img src="../assets/img/interieur/coin-nuit.png" alt="Vista interior complementaria de Arc Immo" width="600"
-                height="400" loading="lazy">
+              <img src="../assets/img/interieur/thumbs/coin-nuit-600.webp"
+                alt="Vista interior complementaria de Arc Immo" width="600" height="400" loading="lazy">
               <span class="gallery-thumb__overlay"></span>
               <span class="gallery-thumb__content">
                 <span class="gallery-thumb__eyebrow">07 · Volúmenes</span>
-                <strong>Perspective intérieure</strong>
+                <strong>Perspectiva interior</strong>
                 <small>Una lectura adicional de los volúmenes y del ambiente</small>
               </span>
             </button>
@@ -676,11 +812,12 @@
         <p class="section-tag">Preparar su llegada</p>
         <h2>Ubicación e itinerario antes de su estancia</h2>
         <p>
-          Encuentre aquí la ubicación del apartamento, el itinerario para llegar a La Mongie y el acceso directo al mapa antes de su llegada.
+          Encuentre aquí la ubicación del apartamento, el itinerario para llegar a La Mongie y el acceso directo al mapa
+          antes de su llegada.
         </p>
 
         <div class="arrival-map-frame">
-          <iframe title="Carte de localisation Arc Immo à La Mongie"
+          <iframe title="Mapa de ubicación de Arc Immo en La Mongie"
             src="https://www.google.com/maps?q=R%C3%A9sidence%20La%20Mongie%20Tourmalet%2C%203%20rue%20de%20Sencours%2C%2065200%20Bagn%C3%A8res-de-Bigorre&output=embed"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -704,7 +841,8 @@
         <p class="section-tag">Tiempo en La Mongie</p>
         <h2>Consultar las condiciones antes de salir</h2>
         <p>
-          En montaña, las condiciones pueden cambiar rápidamente según la temporada. Recuerde consultar el tiempo antes de su llegada para preparar mejor su estancia.
+          En montaña, las condiciones pueden cambiar rápidamente según la temporada. Recuerde consultar el tiempo antes
+          de su llegada para preparar mejor su estancia.
         </p>
 
         <div class="weather-card-v2" id="weather-card">
@@ -746,7 +884,9 @@
           Condiciones mostradas a título informativo. Compruebe siempre el tiempo justo antes de salir.
         </p>
         <p class="weather-law-note">
-          <strong>Ley de Montaña:</strong> del 1 de noviembre al 31 de marzo, en las zonas afectadas, asegúrese de disponer de equipamiento invernal conforme (neumáticos adecuados o cadenas / fundas de nieve) antes de subir a la estación.
+          <strong>Ley de Montaña:</strong> del 1 de noviembre al 31 de marzo, en las zonas afectadas, asegúrese de
+          disponer de equipamiento invernal conforme (neumáticos adecuados o cadenas / fundas de nieve) antes de subir a
+          la estación.
         </p>
       </article>
     </section>
@@ -759,7 +899,8 @@
         <div class="faq-list-v2">
           <details>
             <summary>¿Está Arc Immo realmente a pie de pistas?</summary>
-            <p>Sí. El apartamento se encuentra en la residencia La Mongie Tourmalet, una de las únicas 2 residencias realmente situadas a pie de pistas en la ladera de La Mongie.</p>
+            <p>Sí. El apartamento se encuentra en la residencia La Mongie Tourmalet, una de las únicas 2 residencias
+              realmente situadas a pie de pistas en la ladera de La Mongie.</p>
           </details>
 
           <details>
@@ -789,7 +930,8 @@
 
           <details>
             <summary>¿Dónde se puede aparcar?</summary>
-            <p>Hay un aparcamiento gratuito a unos 150 metros de la residencia, con posibilidad de parada breve frente a la entrada para descargar el equipaje.</p>
+            <p>Hay un aparcamiento gratuito a unos 150 metros de la residencia, con posibilidad de parada breve frente a
+              la entrada para descargar el equipaje.</p>
           </details>
 
           <details>
@@ -806,18 +948,21 @@
           <p class="section-tag light">Reserva</p>
           <h2>Prepare su estancia en Arc Immo</h2>
           <p>
-            ¿Quiere comprobar una disponibilidad, hacer una pregunta sobre el alojamiento o preparar su llegada a La Mongie? Su punto de contacto operativo está a su disposición.
+            ¿Quiere comprobar una disponibilidad, hacer una pregunta sobre el alojamiento o preparar su llegada a La
+            Mongie? Su punto de contacto operativo está a su disposición.
           </p>
         </div>
 
-        <div class="cta-stack-v2">
-          <a class="btn btn-accent" href="tel:+330000000000">Reservar</a>
-          <a class="btn btn-outline" href="mailto:contact@locpilotbyr4.fr">Contactarnos</a>
+        <div class="booking-widget-v2">
+          <div id="elloha_6dccebab-487e-443e-bf6b-d8490d02a34c" style="width:100%; text-align:center;"
+            title="Arc Immo La Mongie" data-id-projet="6dccebab-487e-443e-bf6b-d8490d02a34c">
+            Cargando motor de reserva...
+          </div>
         </div>
 
-        <p class="micro-note light">
-          La reserva en línea llegará próximamente con integración del motor Elloha.
-        </p>
+        <div class="cta-stack-v2">
+          <a class="btn btn-outline" href="mailto:contact@locpilotbyr4.fr">Contactarnos</a>
+        </div>
       </article>
     </section>
   </main>
@@ -853,9 +998,17 @@
         <button class="link-reset footer-cookie-trigger" type="button">Gestionar mis cookies</button>
       </div>
     </div>
+
+    <div class="shell">
+      <p class="footer-credit">
+        <a href="https://locpilotbyr4.fr/" target="_blank" rel="noopener noreferrer">
+          Sitio diseñado con <span aria-hidden="true">♥</span> por LocPilot by R4
+        </a>
+      </p>
+    </div>
   </footer>
 
-  <div class="cookie-banner" id="cookie-banner" hidden>
+  <div class="cookie-banner" id="cookie-banner">
     <div class="cookie-card">
       <p class="cookie-title">Cookies</p>
       <p>
@@ -891,32 +1044,33 @@
 
       <div class="psv-modal__thumbs" id="psv-modal-thumbs">
         <button class="psv-modal__thumb" type="button" data-scene="salle-a-manger">
-          <img src="../assets/img/360/sallemanger.png" alt="Comedor" width="320" height="180" loading="lazy">
+          <img src="../assets/img/360/sallemanger.webp" alt="Comedor" width="320" height="180" loading="lazy">
           <span>Comedor</span>
         </button>
 
         <button class="psv-modal__thumb" type="button" data-scene="salon">
-          <img src="../assets/img/360/salon.png" alt="Salón" width="320" height="180" loading="lazy">
+          <img src="../assets/img/360/salon.webp" alt="Salón" width="320" height="180" loading="lazy">
           <span>Salón</span>
         </button>
 
-        <button class="psv-modal__thumb" type="button" data-scene="cuisine">
-          <img src="../assets/img/360/cuisine.png" alt="Cuisine" width="320" height="180" loading="lazy">
-          <span>Cuisine</span>
+        <button class="psv-modal__thumb" type="button" data-scene="cocina">
+          <img src="../assets/img/360/cuisine.webp" alt="Cocina" width="320" height="180" loading="lazy">
+          <span>Cocina</span>
         </button>
 
         <button class="psv-modal__thumb" type="button" data-scene="chambre">
-          <img src="../assets/img/360/chambre.png" alt="Dormitorio" width="320" height="180" loading="lazy">
+          <img src="../assets/img/360/chambre.webp" alt="Dormitorio" width="320" height="180" loading="lazy">
           <span>Dormitorio</span>
         </button>
 
         <button class="psv-modal__thumb" type="button" data-scene="coin-nuit">
-          <img src="../assets/img/360/chambre-verriere.png" alt="Rincón de noche" width="320" height="180" loading="lazy">
+          <img src="../assets/img/360/chambre-verriere.webp" alt="Rincón de noche" width="320" height="180"
+            loading="lazy">
           <span>Rincón de noche</span>
         </button>
 
         <button class="psv-modal__thumb" type="button" data-scene="salle-de-bain">
-          <img src="../assets/img/360/salledebaindouche.png" alt="Baño" width="320" height="180" loading="lazy">
+          <img src="../assets/img/360/salledebaindouche.webp" alt="Baño" width="320" height="180" loading="lazy">
           <span>Baño</span>
         </button>
       </div>
@@ -944,26 +1098,27 @@
 
       <div class="gallery-modal__thumbs" id="gallery-modal-thumbs">
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="0">
-          <img src="../assets/img/interieur/salle-de-bain.png" alt="Baño" loading="lazy">
+          <img src="../assets/img/interieur/salle-de-bain.webp" alt="Baño" loading="lazy">
         </button>
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="1">
-          <img src="../assets/img/interieur/chambre-superposes.png" alt="Dormitorio con camas dobles superpuestas"
+          <img src="../assets/img/interieur/chambre-superposes.webp" alt="Dormitorio con camas dobles superpuestas"
             loading="lazy">
         </button>
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="2">
-          <img src="../assets/img/interieur/chambre-verriere.png" alt="Rincón de noche detrás de la cristalera" loading="lazy">
+          <img src="../assets/img/interieur/chambre-verriere.webp" alt="Rincón de noche detrás de la cristalera"
+            loading="lazy">
         </button>
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="3">
-          <img src="../assets/img/interieur/salle-a-manger.png" alt="Comedor" loading="lazy">
+          <img src="../assets/img/interieur/salle-a-manger.webp" alt="Comedor" loading="lazy">
         </button>
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="4">
-          <img src="../assets/img/interieur/cuisine.png" alt="Cuisine" loading="lazy">
+          <img src="../assets/img/interieur/cuisine.webp" alt="Cocina" loading="lazy">
         </button>
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="5">
-          <img src="../assets/img/interieur/salon.png" alt="Salón" loading="lazy">
+          <img src="../assets/img/interieur/salon.webp" alt="Salón" loading="lazy">
         </button>
         <button class="gallery-modal__thumb" type="button" data-gallery-jump="6">
-          <img src="../assets/img/interieur/coin-nuit.png" alt="Vista interior adicional" loading="lazy">
+          <img src="../assets/img/interieur/coin-nuit.webp" alt="Vista interior adicional" loading="lazy">
         </button>
       </div>
     </div>
@@ -1017,43 +1172,51 @@
         }).replace('.', '');
       }
 
-      fetch('https://api.open-meteo.com/v1/forecast?latitude=42.90922&longitude=0.16683&current=temperature_2m,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&forecast_days=4&timezone=Europe%2FParis')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          const current = data.current;
-          const daily = data.daily;
-          const currentMeta = getWeatherMeta(current.weather_code);
+      function loadWeatherData() {
+        fetch('https://api.open-meteo.com/v1/forecast?latitude=42.90922&longitude=0.16683&current=temperature_2m,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&forecast_days=4&timezone=Europe%2FParis')
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            const current = data.current;
+            const daily = data.daily;
+            const currentMeta = getWeatherMeta(current.weather_code);
 
-          tempNode.textContent = Math.round(current.temperature_2m) + '°';
-          descNode.textContent = currentMeta.label + ' · Viento ' + Math.round(current.wind_speed_10m) + ' km/h';
-          iconNode.textContent = currentMeta.icon;
+            tempNode.textContent = Math.round(current.temperature_2m) + '°';
+            descNode.textContent = currentMeta.label + ' · Viento ' + Math.round(current.wind_speed_10m) + ' km/h';
+            iconNode.textContent = currentMeta.icon;
 
-          forecastNode.innerHTML = daily.time.map(function (day, index) {
-            const meta = getWeatherMeta(daily.weather_code[index]);
+            forecastNode.innerHTML = daily.time.map(function (day, index) {
+              const meta = getWeatherMeta(daily.weather_code[index]);
 
-            return `
-              <article class="weather-day-v2">
-                <strong>${formatDay(day)}</strong>
-                <span class="weather-day-icon">${meta.icon}</span>
-                <p>${Math.round(daily.temperature_2m_max[index])}° / ${Math.round(daily.temperature_2m_min[index])}°</p>
-              </article>
-            `;
-          }).join('');
-        })
-        .catch(function () {
-          tempNode.textContent = '--°';
-          descNode.textContent = 'Tiempo no disponible por el momento.';
-          iconNode.textContent = '⛰️';
-          forecastNode.innerHTML = `
-            <article class="weather-day-v2">
-              <strong>Info</strong>
-              <span class="weather-day-icon">⛰️</span>
-              <p>Vuelva a intentarlo más tarde</p>
-            </article>
-          `;
-        });
+              return `
+          <article class="weather-day-v2">
+            <strong>${formatDay(day)}</strong>
+            <span class="weather-day-icon">${meta.icon}</span>
+            <p>${Math.round(daily.temperature_2m_max[index])}° / ${Math.round(daily.temperature_2m_min[index])}°</p>
+          </article>
+        `;
+            }).join('');
+          })
+          .catch(function () {
+            tempNode.textContent = '--°';
+            descNode.textContent = 'Tiempo no disponible por el momento.';
+            iconNode.textContent = '⛰️';
+            forecastNode.innerHTML = `
+        <article class="weather-day-v2">
+          <strong>Info</strong>
+          <span class="weather-day-icon">⛰️</span>
+          <p>Vuelva a intentarlo más tarde</p>
+        </article>
+      `;
+          });
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadWeatherData, { timeout: 3000 });
+      } else {
+        window.addEventListener('load', loadWeatherData);
+      }
     })();
   </script>
 
@@ -1066,44 +1229,78 @@
   }
   </script>
 
-  <script type="module">
-    import { Viewer } from '@photo-sphere-viewer/core';
+  <script>
+    let photoSphereCssPromise = null;
+    let PhotoSphereViewerClass = null;
+
+    function loadPhotoSphereCss() {
+      if (photoSphereCssPromise) return photoSphereCssPromise;
+
+      photoSphereCssPromise = new Promise((resolve) => {
+        const existingCss = document.querySelector('link[data-psv-css]');
+        if (existingCss) {
+          resolve();
+          return;
+        }
+
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.css';
+        link.dataset.psvCss = 'true';
+        link.onload = resolve;
+        link.onerror = resolve;
+        document.head.appendChild(link);
+      });
+
+      return photoSphereCssPromise;
+    }
+
+    async function loadPhotoSphereViewer() {
+      await loadPhotoSphereCss();
+
+      if (!PhotoSphereViewerClass) {
+        const module = await import('@photo-sphere-viewer/core');
+        PhotoSphereViewerClass = module.Viewer;
+      }
+
+      return PhotoSphereViewerClass;
+    }
 
     const scenes = [
       {
         id: 'salle-a-manger',
         label: 'Comedor',
-        src: '../assets/img/360/sallemanger.png',
+        src: '../assets/img/360/sallemanger.webp',
         alt: 'Vista previa 360 del comedor de Arc Immo'
       },
       {
         id: 'salon',
         label: 'Salón',
-        src: '../assets/img/360/salon.png',
+        src: '../assets/img/360/salon.webp',
         alt: 'Vista previa 360 del salón de Arc Immo'
       },
       {
-        id: 'cuisine',
-        label: 'Cuisine',
-        src: '../assets/img/360/cuisine.png',
+        id: 'cocina',
+        label: 'Cocina',
+        src: '../assets/img/360/cuisine.webp',
         alt: 'Vista previa 360 de la cocina equipada de Arc Immo'
       },
       {
         id: 'chambre',
         label: 'Dormitorio',
-        src: '../assets/img/360/chambre.png',
+        src: '../assets/img/360/chambre.webp',
         alt: 'Vista previa 360 del dormitorio con camas dobles superpuestas de Arc Immo'
       },
       {
         id: 'coin-nuit',
         label: 'Rincón de noche',
-        src: '../assets/img/360/chambre-verriere.png',
+        src: '../assets/img/360/chambre-verriere.webp',
         alt: 'Vista previa 360 del rincón de noche detrás de la cristalera de Arc Immo'
       },
       {
         id: 'salle-de-bain',
         label: 'Baño',
-        src: '../assets/img/360/salledebaindouche.png',
+        src: '../assets/img/360/salledebaindouche.webp',
         alt: 'Vista previa 360 del baño de Arc Immo'
       }
     ];
@@ -1134,6 +1331,8 @@
 
     async function ensureViewer(scene) {
       if (!viewer) {
+        const Viewer = await loadPhotoSphereViewer();
+
         viewer = new Viewer({
           container: psvContainer,
           panorama: scene.src,
@@ -1143,7 +1342,7 @@
           touchmoveTwoFingers: false,
           defaultYaw: 0,
           defaultPitch: 0,
-          loadingTxt: 'Chargement de la visite…'
+          loadingTxt: 'Cargando la visita…'
         });
         return;
       }
@@ -1241,15 +1440,36 @@
         showSceneByIndex(nextIndex);
       }
     });
-
     const navToggle = document.querySelector('.nav-toggle-v2');
-    const mainNav = document.querySelector('.main-nav-v2');
+    const headerMenu = document.querySelector('.header-menu-v2');
+    const siteHeader = document.querySelector('.site-header');
 
-    if (navToggle && mainNav) {
+    function closeMobileNav() {
+      if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+      if (siteHeader) siteHeader.classList.remove('is-menu-open');
+    }
+
+    if (navToggle && headerMenu) {
       navToggle.addEventListener('click', function () {
         const expanded = navToggle.getAttribute('aria-expanded') === 'true';
         navToggle.setAttribute('aria-expanded', String(!expanded));
-        mainNav.classList.toggle('open');
+        if (siteHeader) siteHeader.classList.toggle('is-menu-open', !expanded);
+      });
+
+      headerMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMobileNav);
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 900) {
+          closeMobileNav();
+        }
+      });
+
+      document.addEventListener('click', function (event) {
+        if (window.innerWidth > 900) return;
+        if (!siteHeader || siteHeader.contains(event.target)) return;
+        closeMobileNav();
       });
     }
 
@@ -1259,21 +1479,37 @@
     const cookieTrigger = document.querySelector('.footer-cookie-trigger');
     const storageKey = 'arc-immo-cookie-choice';
 
-    function showBanner() {
-      if (cookieBanner) cookieBanner.hidden = false;
+    function updateAnalyticsConsent(choice) {
+      if (typeof gtag !== 'function') return;
+
+      gtag('consent', 'update', {
+        'analytics_storage': choice === 'accepted' ? 'granted' : 'denied'
+      });
     }
 
-    function hideBanner() {
-      if (cookieBanner) cookieBanner.hidden = true;
-    }
+  function showBanner() {
+    document.documentElement.classList.remove('has-cookie-choice');
+    if (cookieBanner) cookieBanner.hidden = false;
+  }
 
-    if (!localStorage.getItem(storageKey)) {
-      showBanner();
-    }
+  function hideBanner() {
+    document.documentElement.classList.add('has-cookie-choice');
+    if (cookieBanner) cookieBanner.hidden = true;
+  }
+
+  const savedCookieChoice = localStorage.getItem(storageKey);
+
+  if (savedCookieChoice) {
+    updateAnalyticsConsent(savedCookieChoice);
+    hideBanner();
+  } else {
+    showBanner();
+  }
 
     if (cookieAccept) {
       cookieAccept.addEventListener('click', function () {
         localStorage.setItem(storageKey, 'accepted');
+        updateAnalyticsConsent('accepted');
         hideBanner();
       });
     }
@@ -1281,6 +1517,7 @@
     if (cookieReject) {
       cookieReject.addEventListener('click', function () {
         localStorage.setItem(storageKey, 'rejected');
+        updateAnalyticsConsent('rejected');
         hideBanner();
       });
     }
@@ -1288,6 +1525,7 @@
     if (cookieTrigger) {
       cookieTrigger.addEventListener('click', function () {
         localStorage.removeItem(storageKey);
+        updateAnalyticsConsent('rejected');
         showBanner();
       });
     }
@@ -1308,13 +1546,13 @@
       const galleryCurrentCount = document.getElementById('gallery-current-count');
 
       const galleryItems = [
-        { src: '../assets/img/interieur/salle-de-bain.png', alt: 'Baño de Arc Immo', title: 'Baño' },
-        { src: '../assets/img/interieur/chambre-superposes.png', alt: 'Dormitorio con camas dobles superpuestas', title: 'Dormitorio familiar' },
-        { src: '../assets/img/interieur/chambre-verriere.png', alt: 'Rincón de noche detrás de la cristalera', title: 'Rincón de noche con cristalera' },
-        { src: '../assets/img/interieur/salle-a-manger.png', alt: 'Comedor de Arc Immo', title: 'Espacio comedor' },
-        { src: '../assets/img/interieur/cuisine.png', alt: 'Cocina equipada de Arc Immo', title: 'Cocina equipada' },
-        { src: '../assets/img/interieur/salon.png', alt: 'Salón de Arc Immo', title: 'Salón' },
-        { src: '../assets/img/interieur/coin-nuit.png', alt: 'Vista interior complementaria de Arc Immo', title: 'Perspective intérieure' }
+        { src: '../assets/img/interieur/salle-de-bain.webp', alt: 'Baño de Arc Immo', title: 'Baño' },
+        { src: '../assets/img/interieur/chambre-superposes.webp', alt: 'Dormitorio con camas dobles superpuestas', title: 'Dormitorio familiar' },
+        { src: '../assets/img/interieur/chambre-verriere.webp', alt: 'Rincón de noche detrás de la cristalera', title: 'Rincón de noche con cristalera' },
+        { src: '../assets/img/interieur/salle-a-manger.webp', alt: 'Comedor de Arc Immo', title: 'Espacio comedor' },
+        { src: '../assets/img/interieur/cuisine.webp', alt: 'Cocina equipada de Arc Immo', title: 'Cocina equipada' },
+        { src: '../assets/img/interieur/salon.webp', alt: 'Salón de Arc Immo', title: 'Salón' },
+        { src: '../assets/img/interieur/coin-nuit.webp', alt: 'Vista interior complementaria de Arc Immo', title: 'Perspectiva interior' }
       ];
 
       if (!galleryModal || !galleryModalImage || !galleryCarouselTrack) return;
@@ -1493,7 +1731,7 @@
           <div class="region-modal__topbar">
             <div class="region-modal__heading">
               <p class="region-modal__kicker">La Mongie y alrededores</p>
-              <h2 id="region-modal-title">Título</h2>
+              <h2 id="region-modal-title">Descubrir los alrededores</h2>
 
               <div class="region-modal__meta">
                 <span class="region-modal__pill" id="region-modal-badge">Panorama</span>
@@ -1670,7 +1908,71 @@
       });
     })();
   </script>
+  <script>
+    (function () {
+      document.addEventListener('DOMContentLoaded', function () {
+        const languageLinks = document.querySelectorAll('.lang-switcher a[hreflang]');
 
+        languageLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            const language = (link.getAttribute('hreflang') || '').slice(0, 2);
+
+            if (['fr', 'en', 'es'].includes(language)) {
+              localStorage.setItem('arcPreferredLanguage', language);
+            }
+          });
+        });
+      });
+    })();
+  </script>
+  <script type="text/javascript" src="https://widgets.elloha.com/js/widget-loader.js"></script>
+  <script>
+    (function () {
+      const widgetRootId = 'elloha_6dccebab-487e-443e-bf6b-d8490d02a34c';
+
+      function improveEllohaAccessibility() {
+        const widget = document.getElementById(widgetRootId);
+        if (!widget) return;
+
+        const startDateInput = widget.querySelector('input[id^="start-date"], input[name*="start"], input.date-picker-engine');
+        if (startDateInput && !startDateInput.getAttribute('aria-label')) {
+          startDateInput.setAttribute('aria-label', 'Fecha de llegada');
+          startDateInput.setAttribute('autocomplete', 'off');
+        }
+
+        const endDateInput = widget.querySelector('input[id^="end-date"], input[name*="end"]');
+        if (endDateInput && !endDateInput.getAttribute('aria-label')) {
+          endDateInput.setAttribute('aria-label', 'Fecha de salida');
+          endDateInput.setAttribute('autocomplete', 'off');
+        }
+
+        const arrivalInputs = widget.querySelectorAll('input[type="text"], input[type="date"], select');
+        arrivalInputs.forEach(function (field, index) {
+          if (!field.getAttribute('aria-label') && !field.getAttribute('aria-labelledby')) {
+            field.setAttribute('aria-label', 'Campo de reserva ' + (index + 1));
+          }
+        });
+
+        const buttons = widget.querySelectorAll('button, [role="button"]');
+        buttons.forEach(function (button) {
+          const text = button.textContent.trim();
+          if (!button.getAttribute('aria-label') && text) {
+            button.setAttribute('aria-label', text);
+          }
+        });
+      }
+
+      improveEllohaAccessibility();
+
+      const observer = new MutationObserver(improveEllohaAccessibility);
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      window.addEventListener('load', improveEllohaAccessibility);
+    })();
+  </script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,33 @@
   <link rel="alternate" hreflang="en" href="https://arcimmolamongie.fr/en/legal-notice.html">
   <link rel="alternate" hreflang="es" href="https://arcimmolamongie.fr/es/aviso-legal.html">
   <link rel="alternate" hreflang="x-default" href="https://arcimmolamongie.fr/">
+  <!-- Google tag (gtag.js) - GA4 avec Consent Mode -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    const arcAnalyticsChoice = (() => {
+      try {
+        return localStorage.getItem('arc-immo-cookie-choice');
+      } catch (error) {
+        return null;
+      }
+    })();
+
+    gtag('consent', 'default', {
+      'analytics_storage': arcAnalyticsChoice === 'accepted' ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P88E0RJMH"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-4P88E0RJMH');
+  </script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Ir al contenido</a>
   <header class="site-header">
@@ -22,9 +49,12 @@
       </a>
       <div class="header-actions-v2">
         <nav class="lang-switcher lang-switcher--light" aria-label="Selector de idioma">
-          <a href="../mentions-legales.html" lang="fr" hreflang="fr">FR</a>
-          <a href="../en/legal-notice.html" lang="en" hreflang="en">EN</a>
-          <a class="is-active" href="aviso-legal.html" lang="es" hreflang="es">ES</a>
+          <a href="../mentions-legales.html" lang="fr" hreflang="fr"><img class="lang-flag"
+              src="../assets/img/flags/fr.svg" alt="" aria-hidden="true"><span class="lang-code">FR</span></a>
+          <a href="../en/legal-notice.html" lang="en" hreflang="en"><img class="lang-flag"
+              src="../assets/img/flags/gb.svg" alt="" aria-hidden="true"><span class="lang-code">EN</span></a>
+          <a class="is-active" href="aviso-legal.html" lang="es" hreflang="es"><img class="lang-flag"
+              src="../assets/img/flags/es.svg" alt="" aria-hidden="true"><span class="lang-code">ES</span></a>
         </nav>
         <a class="btn btn-solid" href="index.html#reservation">Reservar</a>
       </div>
@@ -36,18 +66,70 @@
         <article class="white-card-v2">
           <p class="section-tag">Información</p>
           <h2>Aviso legal</h2>
-          <p><strong>Editor del sitio:</strong> LocPilot</p><p><strong>Objeto:</strong> presentación del alojamiento Arc Immo situado en La Mongie.</p><p><strong>Contacto:</strong> contact@locpilotbyr4.fr</p><p><strong>Alojamiento web:</strong> por completar.</p><p><strong>Créditos fotográficos:</strong> propietario / LocPilot según los elementos proporcionados.</p>
+          <p><strong>Editor del sitio:</strong> LocPilot</p>
+          <p><strong>Objeto:</strong> presentación del alojamiento Arc Immo situado en La Mongie.</p>
+          <p><strong>Contacto:</strong> contact@locpilotbyr4.fr</p>
+          <p><strong>Alojamiento web:</strong> HOSTINGER</p>
+          <p><strong>Créditos fotográficos:</strong> propietario / LocPilot según los elementos proporcionados.</p>
         </article>
       </div>
     </section>
   </main>
-  <footer class="footer-v2">
+  <footer class="footer-v2" id="footer">
     <div class="shell footer-grid-v2">
-      <div><strong>Arc Immo</strong><p>Apartamento en La Mongie</p></div>
-      <div><strong>Navegación</strong><a href="index.html">Inicio</a></div>
-      <div><strong>Contact</strong><a href="mailto:contact@locpilotbyr4.fr">contact@locpilotbyr4.fr</a></div>
-      <div><strong>Legal</strong><a href="aviso-legal.html">Aviso legal</a><a href="politica-de-privacidad.html">Privacidad</a><a href="politica-de-cookies.html">Cookies</a></div>
+      <div>
+        <strong>Arc Immo</strong>
+        <p>Apartamento en La Mongie</p>
+      </div>
+
+      <div>
+        <strong>Navegación</strong>
+        <a href="index.html#logement">El apartamento</a>
+        <a href="index.html#equipements">Equipamiento</a>
+        <a href="index.html#couchages">Descanso</a>
+        <a href="index.html#visite-360">Visita 360</a>
+        <a href="index.html#la-mongie-alentours">La Mongie y alrededores</a>
+        <a href="index.html#infos-pratiques">Información práctica</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#reservation">Reservar</a>
+      </div>
+
+      <div>
+        <strong>Legal</strong>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="politica-de-privacidad.html">Política de privacidad</a>
+        <a href="politica-de-cookies.html">Política de cookies</a>
+        <button class="link-reset footer-cookie-trigger" type="button">Gestionar mis cookies</button>
+      </div>
+    </div>
+
+    <div class="shell">
+      <p class="footer-credit">
+        <a href="https://locpilotbyr4.fr/" target="_blank" rel="noopener noreferrer">
+          Sitio diseñado con <span aria-hidden="true">♥</span> por LocPilot by R4
+        </a>
+      </p>
     </div>
   </footer>
+  <script>
+    const cookieTrigger = document.querySelector('.footer-cookie-trigger');
+
+    if (cookieTrigger) {
+      cookieTrigger.addEventListener('click', function () {
+        try {
+          localStorage.removeItem('arc-immo-cookie-choice');
+        } catch (error) { }
+
+        if (typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+          });
+        }
+
+        window.location.href = 'index.html';
+      });
+    }
+  </script>
 </body>
+
 </html>
